@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- AOS Animation Library -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dettoll._ | Web Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #0f0f0f;
+      color: white;
+      overflow-x: hidden;
+      position: relative;
+    }
+    #particles-js {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      background: #1a1a1a;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      position: relative;
+    }
+    nav a span {
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: red;
+      border-radius: 2px;
+      display: none;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 4rem 3rem;
+    }
+    .hero-img img {
+      width: 100%;
+      border-radius: 15px;
+      clip-path: polygon(20% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 20%);
+      object-fit: cover;
+    }
+    section.content {
+      display: none;
+      padding: 3rem;
+      margin: 2rem;
+      background: #111;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    }
+    .social-icons {
+      display: flex;
+      gap: 1.2rem;
+      padding: 2rem 3rem;
+    }
+    .social-icons img {
+      width: 28px;
+      height: 28px;
+      filter: invert(1);
+    }
+  </style>
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <!-- Navbar -->
+  <header>
+    <div>👨‍💻</div>
+    <nav>
+      <a href="#" id="home-btn">Home <span id="home-underline" style="display: block;"></span></a>
+      <a href="#" id="about-btn">About <span id="about-underline"></span></a>
+      <a href="#" id="skills-btn">Skills <span id="skills-underline"></span></a>
+    </nav>
+    <div style="width: 24px; height: 24px; border: 2px solid white; border-radius: 50%;"></div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home-section">
+    <div style="flex: 1; min-width: 300px; max-width: 600px;">
+      <h1 style="font-size: 3.5rem; line-height: 1.3; font-weight: 700; margin-bottom: 1.5rem;">
+        Hi,<br>
+        I'm <span style="color: red;">DETTOLL._</span><br>
+        Web Developer
+      </h1>
+      <a href="https://mail.google.com/mail/?view=cm&fs=1&to=srijan13072010@gmail.com" target="_blank">
+  <button style="
+    background: red;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  ">
+    Contact
+  </button>
+</a>
+
+    </div>
+    <div class="hero-img" style="flex: 1; min-width: 280px; max-width: 400px; margin-top: 2rem;">
+      <img src="Deadpool.jpeg" alt="Dettoll Avatar">
+    </div>
+  </section>
+
+  <!-- Social Icons -->
+  <div class="social-icons">
+    <a href="https://discord.gg/nKKBNYJY" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111370.png" alt="Discord">
+    </a>
+    <a href="https://github.com/dettolll" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub">
+    </a>
+    <a href="https://www.instagram.com/dettollll._/" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png" alt="Instagram">
+    </a>
+  </div>
+
+  <!-- About Section -->
+  <section id="about-section" class="content">
+    <h2 style="color: red; font-size: 2.5rem; margin-bottom: 1rem;">About Me</h2>
+    <p style="font-size: 1.1rem; line-height: 1.8;">
+I’m a self-taught developer and tech enthusiast with a passion for web design, front-end development, and system-level understanding. I enjoy creating responsive, interactive websites with clean UI/UX, animation effects, and smooth user experiences.
+
+Along with web development, I actively explore areas like reverse engineering, automation, and creative problem-solving. I believe in learning by doing, and I’m always working on projects that push my limits and sharpen my skills.
+
+Currently open to opportunities where I can grow, build, and contribute to real-world digital experiences.    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills-section" class="content">
+    <h2 style="color: red; font-size: 2.5rem; margin-bottom: 1rem;">My Skills</h2>
+    <ul style="list-style: none; padding-left: 0; font-size: 1.1rem; line-height: 2;">
+      <li>✅ HTML, CSS, JavaScript</li>
+      <li>⚛️ React.js, JSX, Tailwind CSS</li>
+      <li>📦 Git & GitHub</li>
+      <li>📱 Android reverse engineering (educational)</li>
+      <li>🎨 UI/UX Design (basic Figma)</li>
+      <li>📸 Content creation & social media</li>
+    </ul>
+  </section>
+
+  <!-- Particles.js script -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script>
+    particlesJS("particles-js", {
+      particles: {
+        number: { value: 80, density: { enable: true, value_area: 800 } },
+        color: { value: "#ffffff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.5 },
+        size: { value: 3, random: true },
+        line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+        move: { enable: true, speed: 3, direction: "none", out_mode: "out" }
+      },
+      interactivity: {
+        events: {
+          onhover: { enable: true, mode: "repulse" },
+          onclick: { enable: true, mode: "push" }
+        },
+        modes: {
+          repulse: { distance: 100 },
+          push: { particles_nb: 4 }
+        }
+      },
+      retina_detect: true
+    });
+  </script>
+
+  <!-- JS to toggle sections and underline without scroll -->
+  <script>
+    const homeBtn = document.getElementById("home-btn");
+    const aboutBtn = document.getElementById("about-btn");
+    const skillsBtn = document.getElementById("skills-btn");
+
+    const homeUnderline = document.getElementById("home-underline");
+    const aboutUnderline = document.getElementById("about-underline");
+    const skillsUnderline = document.getElementById("skills-underline");
+
+    const aboutSection = document.getElementById("about-section");
+    const skillsSection = document.getElementById("skills-section");
+    const heroSection = document.getElementById("home-section");
+
+    homeBtn.addEventListener("click", function(e) {
+      e.preventDefault();
+      homeUnderline.style.display = "block";
+      aboutUnderline.style.display = "none";
+      skillsUnderline.style.display = "none";
+
+      heroSection.style.display = "flex";
+      aboutSection.style.display = "none";
+      skillsSection.style.display = "none";
+    });
+
+    aboutBtn.addEventListener("click", function(e) {
+      e.preventDefault();
+      homeUnderline.style.display = "none";
+      aboutUnderline.style.display = "block";
+      skillsUnderline.style.display = "none";
+
+      heroSection.style.display = "none";
+      aboutSection.style.display = "block";
+      skillsSection.style.display = "none";
+    });
+
+    skillsBtn.addEventListener("click", function(e) {
+      e.preventDefault();
+      homeUnderline.style.display = "none";
+      aboutUnderline.style.display = "none";
+      skillsUnderline.style.display = "block";
+
+      heroSection.style.display = "none";
+      aboutSection.style.display = "none";
+      skillsSection.style.display = "block";
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 1000, // animation duration in ms
+    once: true      // only animate once
+  });
+</script>
+</body>
+</html>
